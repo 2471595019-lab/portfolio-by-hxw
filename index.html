@@ -1,0 +1,467 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刺猬 - 个人作品集</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=ZCOOL+KuaiLe&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-logo">
+            <span class="pixel-text">刺猬</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">首页</a></li>
+            <li><a href="#about" class="nav-link">个人简介</a></li>
+            <li><a href="#skills" class="nav-link">技能</a></li>
+            <li><a href="#portfolio" class="nav-link">作品集</a></li>
+            <li><a href="#contact" class="nav-link">联系方式</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="pixel-dots"></div>
+        <div class="pixel-decor pixel-star pixel-star-1"></div>
+        <div class="pixel-decor pixel-star pixel-star-2"></div>
+        <div class="pixel-decor pixel-star pixel-star-3"></div>
+        <div class="pixel-decor pixel-heart pixel-heart-1"></div>
+        <div class="pixel-decor pixel-heart pixel-heart-2"></div>
+        <div class="pixel-decor pixel-bolt pixel-bolt-1"></div>
+        <div class="pixel-decor pixel-bolt pixel-bolt-2"></div>
+        
+        <div class="home-main">
+            <div class="home-image-wrapper">
+                <img src="covers/网页头版底图.png" alt="底图" class="home-image">
+            </div>
+            
+            <div class="home-content">
+                <div class="title-container">
+                    <span class="title-decoration title-left">★</span>
+                    <h1 id="title" class="pixel-title"></h1>
+                    <span class="title-decoration title-right">★</span>
+                </div>
+                <div class="subtitle-container">
+                    <span class="subtitle-line"></span>
+                    <p id="subtitle" class="subtitle">视频创作者 / 数据可视化 / AIGC探索者</p>
+                    <span class="subtitle-line"></span>
+                </div>
+                <div class="pixel-hedgehog"></div>
+            </div>
+        </div>
+        
+        <button id="scroll-btn" class="scroll-btn">
+            <span>▼ 向下滚动 ▼</span>
+        </button>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">个人简介</h2>
+        <div class="about-container">
+            <div class="avatar-wrapper">
+                <div class="avatar">
+                    <img src="selfintroduce/个人简介.jpg" alt="头像" onerror="this.src='https://via.placeholder.com/200x200?text=头像'">
+                </div>
+            </div>
+            <div class="info-cards">
+                <div class="info-card">
+                    <span class="info-label">姓名</span>
+                    <span class="info-value">刺猬</span>
+                </div>
+                <div class="info-card">
+                    <span class="info-label">学校</span>
+                    <span class="info-value">暨南大学</span>
+                </div>
+                <div class="info-card">
+                    <span class="info-label">院系</span>
+                    <span class="info-value">新闻与传播学院 · 广播电视学</span>
+                </div>
+                <div class="info-card">
+                    <span class="info-label">年级</span>
+                    <span class="info-value">2023级 · 本科在读</span>
+                </div>
+                <div class="info-card birthday-card">
+                    <span class="info-label">生日</span>
+                    <span class="info-value">2005.05.12</span>
+                    <span class="age-hint"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">技能</h2>
+        
+        <div class="skills-section">
+            <h3 class="skills-subtitle">专业技能</h3>
+            
+            <div class="radar-charts">
+                <div class="radar-chart-wrapper">
+                    <h4 class="radar-title">视频产出</h4>
+                    <svg class="radar-chart" viewBox="0 0 200 200">
+                        <g transform="translate(100, 100)">
+                            <polygon points="0,-80 80,0 0,80 -80,0" fill="none" stroke="#3A6BD4" stroke-width="2"/>
+                            <polygon points="0,-60 60,0 0,60 -60,0" fill="none" stroke="#3A6BD4" stroke-width="1"/>
+                            <polygon points="0,-40 40,0 0,40 -40,0" fill="none" stroke="#3A6BD4" stroke-width="1"/>
+                            <polygon points="0,-20 20,0 0,20 -20,0" fill="none" stroke="#3A6BD4" stroke-width="1"/>
+                            <line x1="0" y1="0" x2="0" y2="-80" stroke="#3A6BD4" stroke-width="1"/>
+                            <line x1="0" y1="0" x2="80" y2="0" stroke="#3A6BD4" stroke-width="1"/>
+                            <line x1="0" y1="0" x2="0" y2="80" stroke="#3A6BD4" stroke-width="1"/>
+                            <line x1="0" y1="0" x2="-80" y2="0" stroke="#3A6BD4" stroke-width="1"/>
+                            <polygon class="radar-data" points="0,-56 64,0 0,80 -80,0" fill="rgba(127, 231, 204, 0.3)" stroke="#7FE7CC" stroke-width="2"/>
+                        </g>
+                        <text x="100" y="25" text-anchor="middle" fill="#B8D4F0" font-size="9">PR 70</text>
+                        <text x="185" y="105" text-anchor="middle" fill="#B8D4F0" font-size="9">PS 80</text>
+                        <text x="100" y="195" text-anchor="middle" fill="#B8D4F0" font-size="9">剪映 100</text>
+                        <text x="15" y="105" text-anchor="middle" fill="#B8D4F0" font-size="9">LR 80</text>
+                    </svg>
+                </div>
+
+                <div class="radar-chart-wrapper">
+                    <h4 class="radar-title">数据可视化</h4>
+                    <svg class="radar-chart" viewBox="0 0 200 200">
+                        <g transform="translate(100, 100)">
+                            <polygon points="0,-80 70.5,-40.5 70.5,40.5 0,80 -70.5,40.5 -70.5,-40.5" fill="none" stroke="#3A6BD4" stroke-width="2"/>
+                            <polygon points="0,-60 52.5,-30 52.5,30 0,60 -52.5,30 -52.5,-30" fill="none" stroke="#3A6BD4" stroke-width="1"/>
+                            <polygon points="0,-40 35,-20 35,20 0,40 -35,20 -35,-20" fill="none" stroke="#3A6BD4" stroke-width="1"/>
+                            <polygon points="0,-20 17.5,-10 17.5,10 0,20 -17.5,10 -17.5,-10" fill="none" stroke="#3A6BD4" stroke-width="1"/>
+                            <line x1="0" y1="0" x2="0" y2="-80" stroke="#3A6BD4" stroke-width="1"/>
+                            <line x1="0" y1="0" x2="70.5" y2="-40.5" stroke="#3A6BD4" stroke-width="1"/>
+                            <line x1="0" y1="0" x2="70.5" y2="40.5" stroke="#3A6BD4" stroke-width="1"/>
+                            <line x1="0" y1="0" x2="0" y2="80" stroke="#3A6BD4" stroke-width="1"/>
+                            <line x1="0" y1="0" x2="-70.5" y2="40.5" stroke="#3A6BD4" stroke-width="1"/>
+                            <line x1="0" y1="0" x2="-70.5" y2="-40.5" stroke="#3A6BD4" stroke-width="1"/>
+                            <polygon class="radar-data" points="0,-68 59.925,-34 59.925,34 0,80 -70.5,40.5 -63.45,-36" fill="rgba(127, 231, 204, 0.3)" stroke="#7FE7CC" stroke-width="2"/>
+                        </g>
+                        <text x="100" y="20" text-anchor="middle" fill="#B8D4F0" font-size="8">后羿采集器 85</text>
+                        <text x="180" y="50" text-anchor="middle" fill="#B8D4F0" font-size="9">镝数 80</text>
+                        <text x="180" y="150" text-anchor="middle" fill="#B8D4F0" font-size="9">SPSS 85</text>
+                        <text x="100" y="195" text-anchor="middle" fill="#B8D4F0" font-size="9">可画 100</text>
+                        <text x="20" y="150" text-anchor="middle" fill="#B8D4F0" font-size="9">Excel 100</text>
+                        <text x="20" y="50" text-anchor="middle" fill="#B8D4F0" font-size="9">PPT 90</text>
+                    </svg>
+                </div>
+
+                <div class="radar-chart-wrapper">
+                    <h4 class="radar-title">AIGC工具</h4>
+                    <svg class="radar-chart" viewBox="0 0 200 200">
+                        <g transform="translate(100, 100)">
+                            <polygon points="0,-80 80,0 0,80 -80,0" fill="none" stroke="#3A6BD4" stroke-width="2"/>
+                            <polygon points="0,-60 60,0 0,60 -60,0" fill="none" stroke="#3A6BD4" stroke-width="1"/>
+                            <polygon points="0,-40 40,0 0,40 -40,0" fill="none" stroke="#3A6BD4" stroke-width="1"/>
+                            <polygon points="0,-20 20,0 0,20 -20,0" fill="none" stroke="#3A6BD4" stroke-width="1"/>
+                            <line x1="0" y1="0" x2="0" y2="-80" stroke="#3A6BD4" stroke-width="1"/>
+                            <line x1="0" y1="0" x2="80" y2="0" stroke="#3A6BD4" stroke-width="1"/>
+                            <line x1="0" y1="0" x2="0" y2="80" stroke="#3A6BD4" stroke-width="1"/>
+                            <line x1="0" y1="0" x2="-80" y2="0" stroke="#3A6BD4" stroke-width="1"/>
+                            <polygon class="radar-data" points="0,-80 72,0 0,80 -80,0" fill="rgba(127, 231, 204, 0.3)" stroke="#7FE7CC" stroke-width="2"/>
+                        </g>
+                        <text x="100" y="25" text-anchor="middle" fill="#B8D4F0" font-size="9">即梦 100</text>
+                        <text x="185" y="105" text-anchor="middle" fill="#B8D4F0" font-size="8">DubbingX 90</text>
+                        <text x="100" y="195" text-anchor="middle" fill="#B8D4F0" font-size="9">Coze 100</text>
+                        <text x="15" y="105" text-anchor="middle" fill="#B8D4F0" font-size="8">MiniMax 100</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="abilities-section">
+            <h3 class="skills-subtitle">个人能力</h3>
+            <div class="ability-tags">
+                <span class="ability-tag">影视编导</span>
+                <span class="ability-tag">视频剪辑</span>
+                <span class="ability-tag">摄像摄影</span>
+                <span class="ability-tag">数据分析</span>
+                <span class="ability-tag">数据可视化</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2 class="section-title">作品集 <span class="section-subtitle">（建议使用百度网盘扫描二维码）</span></h2>
+        
+        <div class="portfolio-tabs">
+            <button class="tab-btn active" data-tab="videos">视频作品</button>
+            <button class="tab-btn" data-tab="articles">文章作品</button>
+        </div>
+
+        <div class="portfolio-content">
+            <div class="tab-content active" id="videos-content">
+                <div class="video-section">
+                    <h3 class="section-label">📊 数据新闻视频作品</h3>
+                    <div class="video-grid">
+                        <div class="video-card">
+                            <div class="video-cover">
+                                <img src="covers/数据新闻视频封面/广州友城-封面.png" alt="广州友城封面" onerror="this.src='https://via.placeholder.com/480x270?text=广州友城'">
+                            </div>
+                            <h3 class="video-title">广州友城</h3>
+                            <button class="qr-toggle-btn">点击查看</button>
+                            <div class="qr-container">
+                                <img src="covers/视频作品二维码/数据新闻作品-二维码/广州友城-二维码.png" alt="广州友城二维码" class="qr-code" onerror="this.src='https://via.placeholder.com/120x120?text=二维码'">
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <div class="video-cover">
+                                <img src="covers/数据新闻视频封面/社媒禁令-封面.png" alt="社媒禁令封面" onerror="this.src='https://via.placeholder.com/480x270?text=社媒禁令'">
+                            </div>
+                            <h3 class="video-title">社媒禁令</h3>
+                            <button class="qr-toggle-btn">点击查看</button>
+                            <div class="qr-container">
+                                <img src="covers/视频作品二维码/数据新闻作品-二维码/社媒禁令-二维码.png" alt="社媒禁令二维码" class="qr-code" onerror="this.src='https://via.placeholder.com/120x120?text=二维码'">
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <div class="video-cover">
+                                <img src="covers/数据新闻视频封面/青年就业-封面.png" alt="青年就业封面" onerror="this.src='https://via.placeholder.com/480x270?text=青年就业'">
+                            </div>
+                            <h3 class="video-title">青年就业</h3>
+                            <button class="qr-toggle-btn">点击查看</button>
+                            <div class="qr-container">
+                                <img src="covers/视频作品二维码/数据新闻作品-二维码/青年就业-二维码.png" alt="青年就业二维码" class="qr-code" onerror="this.src='https://via.placeholder.com/120x120?text=二维码'">
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <div class="video-cover">
+                                <img src="covers/数据新闻视频封面/科技全运-封面.jpg" alt="科技全运封面" onerror="this.src='https://via.placeholder.com/480x270?text=科技全运'">
+                            </div>
+                            <h3 class="video-title">科技全运</h3>
+                            <button class="qr-toggle-btn">点击查看</button>
+                            <div class="qr-container">
+                                <img src="covers/视频作品二维码/数据新闻作品-二维码/科技全运-二维码.png" alt="科技全运二维码" class="qr-code" onerror="this.src='https://via.placeholder.com/120x120?text=二维码'">
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <div class="video-cover">
+                                <img src="covers/数据新闻视频封面/龙舟经济-封面.png" alt="龙舟经济封面" onerror="this.src='https://via.placeholder.com/480x270?text=龙舟经济'">
+                            </div>
+                            <h3 class="video-title">龙舟经济</h3>
+                            <button class="qr-toggle-btn">点击查看</button>
+                            <div class="qr-container">
+                                <img src="covers/视频作品二维码/数据新闻作品-二维码/龙舟经济-二维码.png" alt="龙舟经济二维码" class="qr-code" onerror="this.src='https://via.placeholder.com/120x120?text=二维码'">
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <div class="video-cover">
+                                <img src="covers/数据新闻视频封面/金价波动-封面.jpg" alt="金价波动封面" onerror="this.src='https://via.placeholder.com/480x270?text=金价波动'">
+                            </div>
+                            <h3 class="video-title">金价波动</h3>
+                            <button class="qr-toggle-btn">点击查看</button>
+                            <div class="qr-container">
+                                <img src="covers/视频作品二维码/数据新闻作品-二维码/金价波动-二维码.png" alt="金价波动二维码" class="qr-code" onerror="this.src='https://via.placeholder.com/120x120?text=二维码'">
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <div class="video-cover">
+                                <img src="covers/数据新闻视频封面/短剧出海-封面.png" alt="短剧出海封面" onerror="this.src='https://via.placeholder.com/480x270?text=短剧出海'">
+                            </div>
+                            <h3 class="video-title">短剧出海</h3>
+                            <button class="qr-toggle-btn">点击查看</button>
+                            <div class="qr-container">
+                                <img src="covers/视频作品二维码/数据新闻作品-二维码/短剧出海-二维码.png" alt="短剧出海二维码" class="qr-code" onerror="this.src='https://via.placeholder.com/120x120?text=二维码'">
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <div class="video-cover">
+                                <img src="covers/数据新闻视频封面/财富500强-封面.png" alt="财富500强封面" onerror="this.src='https://via.placeholder.com/480x270?text=财富500强'">
+                            </div>
+                            <h3 class="video-title">财富世界500强</h3>
+                            <button class="qr-toggle-btn">点击查看</button>
+                            <div class="qr-container">
+                                <img src="covers/视频作品二维码/数据新闻作品-二维码/财富500强-二维码.png" alt="财富世界500强二维码" class="qr-code" onerror="this.src='https://via.placeholder.com/120x120?text=二维码'">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-section">
+                    <h3 class="section-label">🤖 AIGC视频作品</h3>
+                    <div class="video-grid">
+                        <div class="video-card">
+                            <div class="video-cover">
+                                <img src="covers/AIGC视频封面/与妻书-封面.jpg" alt="与妻书封面" onerror="this.src='https://via.placeholder.com/480x270?text=与妻书'">
+                            </div>
+                            <h3 class="video-title">与妻书</h3>
+                            <button class="qr-toggle-btn">点击查看</button>
+                            <div class="qr-container">
+                                <img src="covers/视频作品二维码/AIGC作品-二维码/与妻书-二维码.png" alt="与妻书二维码" class="qr-code" onerror="this.src='https://via.placeholder.com/120x120?text=二维码'">
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <div class="video-cover">
+                                <img src="covers/AIGC视频封面/大学生眼中十五运-封面.jpg" alt="十五运封面" onerror="this.src='https://via.placeholder.com/480x270?text=十五运'">
+                            </div>
+                            <h3 class="video-title">大学生眼中的十五运</h3>
+                            <button class="qr-toggle-btn">点击查看</button>
+                            <div class="qr-container">
+                                <img src="covers/视频作品二维码/AIGC作品-二维码/大学生眼中十五运-二维码.png" alt="大学生眼中的十五运二维码" class="qr-code" onerror="this.src='https://via.placeholder.com/120x120?text=二维码'">
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <div class="video-cover">
+                                <img src="covers/AIGC视频封面/科大讯飞-封面.jpg" alt="讯飞封面" onerror="this.src='https://via.placeholder.com/480x270?text=讯飞星火'">
+                            </div>
+                            <h3 class="video-title">讯飞星火启动</h3>
+                            <button class="qr-toggle-btn">点击查看</button>
+                            <div class="qr-container">
+                                <img src="covers/视频作品二维码/AIGC作品-二维码/科大讯飞-二维码.png" alt="讯飞星火启动二维码" class="qr-code" onerror="this.src='https://via.placeholder.com/120x120?text=二维码'">
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <div class="video-cover">
+                                <img src="covers/AIGC视频封面/小柴胡-封面.jpg" alt="小柴胡封面" onerror="this.src='https://via.placeholder.com/480x270?text=小柴胡'">
+                            </div>
+                            <h3 class="video-title">小柴胡</h3>
+                            <button class="qr-toggle-btn">点击查看</button>
+                            <div class="qr-container">
+                                <img src="covers/视频作品二维码/AIGC作品-二维码/小柴胡-二维码.png" alt="小柴胡二维码" class="qr-code" onerror="this.src='https://via.placeholder.com/120x120?text=二维码'">
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <div class="video-cover">
+                                <img src="covers/AIGC视频封面/活力全运多彩湾区-封面.jpg" alt="活力全运动封面" onerror="this.src='https://via.placeholder.com/480x270?text=活力全运'">
+                            </div>
+                            <h3 class="video-title">活力全运 多彩湾区</h3>
+                            <button class="qr-toggle-btn">点击查看</button>
+                            <div class="qr-container">
+                                <img src="covers/视频作品二维码/AIGC作品-二维码/活力全运多彩湾区-二维码.png" alt="活力全运多彩湾区二维码" class="qr-code" onerror="this.src='https://via.placeholder.com/120x120?text=二维码'">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-section">
+                    <h3 class="section-label">🌟 其他优秀作品</h3>
+                    <div class="video-grid">
+                        <div class="video-card">
+                            <div class="video-cover">
+                                <img src="covers/其他优秀作品封面/深AI创新，圳启未来-封面.jpg" alt="深AI创新封面" onerror="this.src='https://via.placeholder.com/480x270?text=深AI创新'">
+                            </div>
+                            <h3 class="video-title">深AI创新，圳启未来</h3>
+                            <button class="qr-toggle-btn">点击查看</button>
+                            <div class="qr-container">
+                                <img src="covers/视频作品二维码/其他优秀作品二维码/深AI创新，圳启未来-二维码.png" alt="深AI创新圳启未来二维码" class="qr-code" onerror="this.src='https://via.placeholder.com/120x120?text=二维码'">
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <div class="video-cover">
+                                <img src="covers/其他优秀作品封面/疯狂新传人之创作不停歇-封面.jpg" alt="疯狂新传人封面" onerror="this.src='https://via.placeholder.com/480x270?text=疯狂新传人'">
+                            </div>
+                            <h3 class="video-title">疯狂新传人</h3>
+                            <button class="qr-toggle-btn">点击查看</button>
+                            <div class="qr-container">
+                                <img src="covers/视频作品二维码/其他优秀作品二维码/疯狂新传人-二维码.png" alt="疯狂新传人二维码" class="qr-code" onerror="this.src='https://via.placeholder.com/120x120?text=二维码'">
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <div class="video-cover">
+                                <img src="covers/其他优秀作品封面/潮彩新匠-封面.png" alt="潮彩新匠封面" onerror="this.src='https://via.placeholder.com/480x270?text=潮彩新匠'">
+                            </div>
+                            <h3 class="video-title">潮彩新匠</h3>
+                            <button class="qr-toggle-btn">点击查看</button>
+                            <div class="qr-container">
+                                <img src="covers/视频作品二维码/其他优秀作品二维码/潮彩新匠-二维码.png" alt="潮彩新匠二维码" class="qr-code" onerror="this.src='https://via.placeholder.com/120x120?text=二维码'">
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <div class="video-cover">
+                                <img src="covers/其他优秀作品封面/一笔一划一窑火-封面.png" alt="一笔一划一窑火封面" onerror="this.src='https://via.placeholder.com/480x270?text=一笔一划一窑火'">
+                            </div>
+                            <h3 class="video-title">一笔一划一窑火</h3>
+                            <button class="qr-toggle-btn">点击查看</button>
+                            <div class="qr-container">
+                                <img src="covers/视频作品二维码/其他优秀作品二维码/一笔一划一窑火-二维码.png" alt="一笔一划一窑火二维码" class="qr-code" onerror="this.src='https://via.placeholder.com/120x120?text=二维码'">
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <div class="video-cover">
+                                <img src="covers/其他优秀作品封面/红途寻迹 潮青对话-封面.png" alt="红途寻迹封面" onerror="this.src='https://via.placeholder.com/480x270?text=红途寻迹'">
+                            </div>
+                            <h3 class="video-title">红途寻迹 潮青对话</h3>
+                            <button class="qr-toggle-btn">点击查看</button>
+                            <div class="qr-container">
+                                <img src="covers/视频作品二维码/其他优秀作品二维码/红途寻迹 潮青对话-二维码.png" alt="红途寻迹潮青对话二维码" class="qr-code" onerror="this.src='https://via.placeholder.com/120x120?text=二维码'">
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <div class="video-cover">
+                                <img src="covers/其他优秀作品封面/直击会场-封面.png" alt="直击会场封面" onerror="this.src='https://via.placeholder.com/480x270?text=直击会场'">
+                            </div>
+                            <h3 class="video-title">直击会场！来听听他们说粤语</h3>
+                            <button class="qr-toggle-btn">点击查看</button>
+                            <div class="qr-container">
+                                <img src="covers/其他/直击会场二维码.png" alt="直击会场二维码" class="qr-code" onerror="this.src='https://via.placeholder.com/120x120?text=二维码'">
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <div class="video-cover">
+                                <img src="covers/其他优秀作品封面/拉美功夫少年 让世界共享中医.jpg" alt="拉美功夫少年封面" onerror="this.src='https://via.placeholder.com/480x270?text=拉美功夫少年'">
+                            </div>
+                            <h3 class="video-title">拉美功夫少年 让世界共享中医</h3>
+                            <button class="qr-toggle-btn">点击查看</button>
+                            <div class="qr-container">
+                                <img src="covers/视频作品二维码/其他优秀作品二维码/拉美功夫少年 让世界共享中医-二维码.png" alt="拉美功夫少年二维码" class="qr-code" onerror="this.src='https://via.placeholder.com/120x120?text=二维码'">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="articles-content">
+                <div class="article-section">
+                    <h3 class="section-label">📝 暨南大学新闻社推文作品</h3>
+                    <div class="article-grid">
+                        <a href="https://mp.weixin.qq.com/s/vICCaOoUW80B1b0kyrbntw" class="article-card" target="_blank">
+                            <img src="covers/推文封面/你比自己想象中更棒.jpg" alt="你，比自己想象中更棒！" onerror="this.src='https://via.placeholder.com/600x400?text=你比自己想象中更棒'">
+                            <h3 class="article-title">你，比自己想象中更棒！</h3>
+                        </a>
+                        <a href="https://mp.weixin.qq.com/s/gwcm2LJy-HaTIEsL-6URTw" class="article-card" target="_blank">
+                            <img src="covers/推文封面/今日暨南暖.jpg" alt="今日暨南，暖！" onerror="this.src='https://via.placeholder.com/600x400?text=今日暨南暖'">
+                            <h3 class="article-title">今日暨南，暖！</h3>
+                        </a>
+                        <a href="https://mp.weixin.qq.com/s/goZo6ONBg4MdR-0Jmb-POw" class="article-card" target="_blank">
+                            <img src="covers/推文封面/啊秋.jpg" alt="啊…啊秋！" onerror="this.src='https://via.placeholder.com/600x400?text=啊秋'">
+                            <h3 class="article-title">啊…啊秋！</h3>
+                        </a>
+                        <a href="https://mp.weixin.qq.com/s/kngtWWrdBqRn26vy_7uX3g" class="article-card" target="_blank">
+                            <img src="covers/推文封面/今日小雪.jpg" alt="今日小雪：送你一份暨色风景" onerror="this.src='https://via.placeholder.com/600x400?text=今日小雪'">
+                            <h3 class="article-title">今日小雪：送你一份暨色风景</h3>
+                        </a>
+                        <a href="http://xhslink.com/o/1xlygd81lzS" class="article-card" target="_blank">
+                            <img src="covers/推文封面/三折叠.jpg" alt="三折叠 怎么折 都有面" onerror="this.src='https://via.placeholder.com/600x400?text=三折叠'">
+                            <h3 class="article-title">三折叠 怎么折 都有面</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">联系方式</h2>
+        <div class="contact-cards">
+            <a href="tel:15118681225" class="contact-card">
+                <span class="contact-icon">📞</span>
+                <span class="contact-text">151 1868 1225</span>
+            </a>
+            <a href="mailto:hong_xianwei@foxmail.com" class="contact-card">
+                <span class="contact-icon">✉️</span>
+                <span class="contact-text">hong_xianwei@foxmail.com</span>
+            </a>
+        </div>
+        <p class="copyright">© 2025 刺猬 · 用心制作</p>
+    </section>
+
+    <div id="video-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close">✕</button>
+            <video id="modal-video" controls></video>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
